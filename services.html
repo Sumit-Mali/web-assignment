@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTA Assignment</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+         .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+     /* Services section */
+    .services {
+      margin-top: 40px;
+    }
+
+    .service {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: auto;
+    }
+
+    .service img{
+        width: 20vh;
+	    height: 20vh;
+        float: right;
+    }
+    
+    .service h2 {
+      color: #333;
+    }
+
+    .service p {
+      color: #777;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .container {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .container {
+        padding: 10px;
+      }
+    }
+    </style>
+</head>
+<body>
+     <!-- Header -->
+		<header>
+			<h1>SKMS Designers</h1>
+		</header>
+		<!-- End Header -->
+
+		<!-- Navbar -->
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+				<ul class="social-links"></ul>
+					<li>
+						<a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-square-facebook"></i></i></a>
+					</li>
+				</ul>
+			</ul>
+		</nav>
+
+        <!-- Services Section -->
+            <div class="container">
+                <h1>Our Services</h1>
+                <div class="services">
+                     <div class="service">
+                        <img src="photos/web-design.jpg" alt="">
+                        <h2>Website Design</h2>
+                        <p>We offer comprehensive website design services. Our talented designers create visually stunning and user-friendly websites that align with your brand identity and business goals.</p>
+                    </div>
+                     <div class="service">
+                        <img src="photos/graphic-design.jpg" alt="">
+                        <h2>Graphic Design</h2>
+                        <p>We creates visuals for all kinds of projects, from websites to print ads, logos, typography, and color palettes User interfaces on apps and websites. Books, magazines, newspapers, and other publications..</p>
+                    </div>
+                     <div class="service">
+                        <img src="photos/content-writing.jpg" alt="">
+                        <h2>Content Writing</h2>
+                        <p>We may create both print and online content that helps to educate and inform readers. That content creation may focus on blogs, articles, website content, white papers, press releases, and more.</p>
+                    </div>
+                     <div class="service">
+                        <img src="photos/web-hosting.jpg" alt="">
+                        <h2>Web Hosting</h2>
+                        <p> We are provider, who stores and maintains website files and applications on a server to make its customers' websites accessible on the internet.</p>
+                    </div>
+                     <div class="service">
+                        <img src="photos/photography.jpg" alt="">
+                        <h2>Photography</h2>
+                        <p>We are the people with extraordinary mind provide videos and photographs for a variety of purposes including advertising, training, documentation, and employee communication. </p>
+                    </div>
+                    <div class="service">
+                        <img src="photos/responsive.jpg" alt="">
+                        <h2>Responsive Development</h2>
+                        <p>We specialize in developing responsive websites that adapt seamlessly to various screen sizes and devices. Your website will provide an optimal viewing experience for all users, whether it's a desktop, tablet, or smartphone.</p>
+                    </div>
+                    <div class="service">
+                        <img src="photos/uiux.jpg" alt="">
+                        <h2>User Experience (UX) Design</h2>
+                        <p>We prioritize user experience, ensuring that every interaction on your website is intuitive, efficient, and enjoyable. Our UX design expertise focuses on creating engaging interfaces that guide users toward their desired actions.</p>
+                    </div>
+                    <div class="service">
+                        <img src="photos/branding.jpg" alt="">
+                        <h2>Visual Branding</h2>
+                        <p>We understand the importance of consistent and impactful branding. Our team can help you establish a strong visual identity that resonates with your target audience, incorporating elements such as logos, color schemes, typography, and more.</p>
+                    </div>
+                    <div class="service">
+                        <img src="photos/ecommerce.jpg" alt="">
+                        <h2>E-commerce Solutions</h2>
+                        <p>If you're looking to sell products or services online, we can develop a secure and user-friendly e-commerce website tailored to your specific needs. We integrate robust payment gateways, inventory management systems, and other essential features to ensure smooth online transactions.</p>
+                    </div>
+                </div>
+            </div>
+        <!-- End Services Section -->
+
+        <!-- Footer -->
+		<footer>
+			<p>&copy; 2023 SKMS Designer. All rights reserved.</p>
+		</footer>
+		<!-- End Footer -->
+
+		<!-- External JS -->
+		<script src="script.js"></script>
+
+		<!-- Fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/1d1be88acc.js"
+			crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header styles */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+}
+
+/* Navigation styles */
+nav {
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: 10px;
+	color: #333;
+	font-size: 20px;
+}
+
+nav .social-links {
+	display: inline;
+	margin-left: 66.5vw;
+}
+
+/* Services Section styles */
+section {
+	padding: 20px;
+}
+
+section h2 {
+	color: #333;
+}
+
+/* Services and Pricing Section styles */
+section {
+	padding: 20px;
+}
+
+section h2 {
+	color: #333;
+}
+
+.services-class {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.services-item {
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 10px;
+	transition: all 0.5s ease-in-out;
+}
+
+/* .services-item:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	-webkit-box-shadow: 0 0 5px 2px #000;
+	-moz-box-shadow: 0 0 5px 2px #000;
+	box-shadow: 0 0 5px 2px #000;
+} */
+
+.services-item img {
+	width: 20vh;
+	height: 20vh;
+}
+
+.services-item figcaption {
+	text-align: center;
+	padding-top: 5px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		overflow-x: hidden;
+	}
+	.services-class,
+	.services-item {
+		display: block;
+		text-align: center;
+	}
+
+	.services-item img {
+		width: 200px;
+	}
+
+	.social-links a,
+	i {
+		visibility: hidden;
+	}
+}
+
+/* Table styles */
+.styled-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.styled-table thead th {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+}
+
+.styled-table tbody td {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+.styled-table tbody tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/* Form styles */
+.styled-form {
+	display: grid;
+	gap: 10px;
+	max-width: 400px;
+	margin: 20px auto;
+}
+
+.styled-form label {
+	font-weight: bold;
+}
+
+.styled-form input[type='text'],
+.styled-form input[type='email'],
+.styled-form input[type='tel'],
+.styled-form textarea {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+
+.styled-form select {
+	padding: 8px;
+	width: 10vw;
+}
+
+.styled-form input[type='checkbox'] {
+	margin-top: 5px;
+}
+
+.styled-form input[type='date'] {
+	width: 100px;
+}
+
+.styled-form input[type='submit'],
+.styled-form input[type='reset'] {
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.styled-form input[type='submit']:hover {
+	background-color: #555;
+}
+
+.styled-form input[type='reset']:hover {
+	background-color: #555;
+}
+
+/* Footer styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WTA Assignment</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<!-- Navbar -->
+	<header>
+		<h1>SKMS Designers</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+			<ul class="social-links"></ul>
+			<li>
+				<a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="fa-brands fa-square-instagram"></i></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="fa-brands fa-square-facebook"></i></i></a>
+			</li>
+		</ul>
+		</ul>
+	</nav>
+	<!--End Navbar -->
+
+	<!-- Contact Section-->
+	<?php
+	if (isset($_POST['name']) && isset($_POST['email'])) {
+		echo "<h1>Form Submitted</h>";
+		echo $_POST['name'] . "<br>";
+		echo $_POST['email'] . "<br>";
+	}
+	?>
+	<section>
+		<h2>Contact Us</h2>
+		<form name="contactForm" class="styled-form" id="myForm" action="" autocomplete="off" method="post"
+			onsubmit="return validateForm()" onreset="alert('Form data reset successful!')">
+			<label for="name">Name:</label>
+			<input name="name" type="text" id="nameInput" value="" onfocus="highlightInput(this)" />
+			<span style="color:red;">*</span>
+
+			<label for="email">Email:</label>
+			<input name="email" type="text" id="emailInput" value="" onfocus="highlightInput(this)" />
+			<span style="color:red;">*</span>
+
+			<label for="phone">Phone:</label>
+			<input name="phone" type="text" id="phoneInput" maxlength="10" onfocus="highlightInput(this)">
+			<span style="color:red;">*</span>
+
+			<label for="message">Message:</label>
+			<textarea id="messageInput" name="message" onfocus="highlightInput(this)"
+				onselect="myFunction()"></textarea>
+			<span style="color:red;">*</span>
+
+			<label for="job">Do you want to join us?</label>
+			<label for="yes"><input type="radio" name="yesorno" id="radioInput"
+					onblur="alert('Radio button looses the focus!')">Yes</label>
+			<label for="no"><input type="radio" name="yesorno" id="radioInput"
+					onblur="alert('Radio button looses the focus!')">No</label>
+			<span style="color:red;">*</span>
+
+			<label for="skill">If you select yes, then select the skill listed below:</label>
+			<select name="skill" id="selectInput" onchange="alert('You have changed the selection!')">
+				<option value="webDesign">Web Design</option>
+				<option value="graphicDesign">Graphic Design</option>
+				<option value="contentWriting">Content Writing</option>
+				<option value="webHosting">Web Hosting</option>
+				<option value="photography">Photography</option>
+			</select>
+			<span style="color:red;">*</span>
+
+			<label for="photoupload">Please! Upload your photo:</label>
+			<input type="file" name="photoupload" id="photo">
+			<span style="color:red;">*</span>
+
+			<label for="color">Select your favourite color to get know more about you:</label>
+			<input type="color" name="color" id="color" value="#ff0000">
+			<span style="color:red;">*</span>
+
+			<label for="dob">Date-of-Birth:</label>
+			<input type="date" name="dob" id="dob">
+			<span style="color:red;">*</span>
+
+			<label for="subscribe">Subscribe to our Newsletter:&nbsp<input type="checkbox" id="subscribe"
+					name="subscribe" /></label>
+			<br>
+			<span style="color:red;">*</span>
+
+			<input type="submit" name="submit" id="myBox" value="Submit" />
+			<input type="reset" name="reset" id="myBox" value="Reset" />
+		</form>
+	</section>
+	<!-- End Contact Section-->
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2023 SKMS Designer. All rights reserved.</p>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- External JS -->
+	<script src="script.js"></script>
+
+	<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/1d1be88acc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
